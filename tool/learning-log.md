@@ -1,15 +1,17 @@
 # Tool Learning Log
 
-Tool: **X**
+Tool: **[Jest](https://jestjs.io/)**
 
-Project: **X**
+Project: **Helpful learning website**
 
 ---
 
-X/X/X:
-* Text
+10/28/2023:
+* I went the the [Getting Started](https://jestjs.io/docs/getting-started) to find the setup and a [youtube tutorial](https://www.youtube.com/watch?v=FgnxcUQ5vho&ab_channel=WebDevSimplified) if the setup in jest. (benefits of jests)
+* Reading if you need to have Jest [installed](https://stackoverflow.com/questions/69559370/jest-without-npm-or-yarn) in order to test the coding out
+* 
 
-X/X/X:
+10/XX/2023:
 * Text
 
 
