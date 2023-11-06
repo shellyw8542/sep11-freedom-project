@@ -14,7 +14,14 @@ Project: **Helpful learning website**
 * As for now, I will watch videos about Jest to see if it would fit into my coding style.
 
 10/29/2023:
-* Text
+* Got to download Jestjs on my ide sandbox.
+11/5/2023
+* Gotten to create a platform for jest runs
+* Getting started had a test that you will need to "run npm" with
+* It kept showing me an error on the JSON
+* Decide to look at the backup tool (Aframe)
+* Getting start for A-frame was pretty simple and jsbin friendly.
+* Aframe needs to have <script> before the <a-scene>
 
 
 <!-- 
