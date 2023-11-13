@@ -22,6 +22,11 @@ Project: **Helpful learning website**
 * Decide to look at the backup tool (Aframe)
 * Getting start for A-frame was pretty simple and jsbin friendly.
 * Aframe needs to have <script> before the <a-scene>
+11/13/2023
+* Discussed with Shubata about what do to for freedom project
+* Plan on using the [360](https://aframe.io/examples/showcase/sky/)
+* Shubata gave me a [video](https://www.youtube.com/watch?v=ZFTSLHd7xgY)
+* 
 
 
 <!-- 
