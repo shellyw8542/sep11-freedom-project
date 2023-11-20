@@ -35,7 +35,9 @@ Project: **Helpful learning website**
 * Came across an error with Jsbin when tinkering with the demo with autoplay false.
 * When testing loops (with A-frame) right-click and turn off the loop.
 * Play and Pause can be used by javascript `play-pause` in HTML
-  
+
+11/20/2023:
+*
 
 
 <!-- 
