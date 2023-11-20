@@ -20,7 +20,7 @@ Project: **Helpful learning website**
 * Getting started had a test that you will need to "run npm" with
 * It kept showing me an error on the JSON
 * Decide to look at the backup tool (Aframe)
-* Getting start for A-frame was pretty simple and jsbin friendly.
+* Getting started for A-frame was pretty simple and jsbin friendly.
 * Aframe needs to have <script> before the <a-scene>  
 11/13/2023:
 * Discussed with Shubata about what do to for the freedom project
@@ -32,8 +32,8 @@ Project: **Helpful learning website**
 * Loops
 * Autoplay loop can be true or false (true means keep playing) (false stop playing)
 * Came across an error with Jsbin when tinkering with the demo with autoplay false.
-* When doing Jsbin click and turn off the loop.
-* Play and Pause can be used by javascript `play-pause` in html
+* When testing loops (with A-frame) right-click and turn off the loop.
+* Play and Pause can be used by javascript `play-pause` in HTML
   
 
 
