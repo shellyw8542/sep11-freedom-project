@@ -26,7 +26,7 @@ Project: **Helpful learning website**
 11/13/2023:
 * Discussed with Shubata about what do to for the freedom project
 * Plan on using the [360](https://aframe.io/examples/showcase/sky/)
-* Shubata gave me a [video]([https://www.youtube.com/watch?v=ZFTSLHd7xgY](https://www.youtube.com/watch?v=ZFTSLHd7xgY))
+* Shubata gave me a [video]([https://www.youtube.com/watch?v=ZFTSLHd7xgY](https://www.youtube.com/watch?v=ZFTSLHd7xgY)
 * Another link from the demo in [A-Frame](https://github.com/aframevr/aframe/blob/master/examples/test/video/index.html)
 * Considering both the video and the link they both have `video id (and/or) src` <-- this is a lot like the HTML img id (which gives the img variable a name) and src is the link or file for the video)
 * `<videosphere src>` <-- for the 360 videos and depending on the video's length and width has a rotation [00, 00, 00]
