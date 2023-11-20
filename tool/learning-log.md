@@ -21,7 +21,8 @@ Project: **Helpful learning website**
 * It kept showing me an error on the JSON
 * Decide to look at the backup tool (Aframe)
 * Getting started for A-frame was pretty simple and jsbin friendly.
-* Aframe needs to have <script> before the <a-scene>  
+* Aframe needs to have <script> before the <a-scene>
+
 11/13/2023:
 * Discussed with Shubata about what do to for the freedom project
 * Plan on using the [360](https://aframe.io/examples/showcase/sky/)
