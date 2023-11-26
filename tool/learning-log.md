@@ -37,8 +37,18 @@ Project: **Helpful learning website**
 * Play and Pause can be used by javascript `play-pause` in HTML
 
 11/20/2023:
-*
-
+* Experimented with [Responsive UI](https://aframe.io/examples/showcase/responsiveui/)
+* By using the Inspect Scene 
+* Whenever you click on the element it focuses on that element
+* Uses `<a-entity>` for a lot of these elements and projects
+* Decided to look at the [entity](https://aframe.io/docs/1.5.0/core/entity.html) element
+* entity's itself does not do anything
+* The functions of entity's is to attach `geometry`, `material`, and `light`
+* Example: `<a-entity geometry="primitive: box" material="color: red"
+          light="type: point; intensity: 2.0">`
+* Adding this to the example made the model more realistic
+* You can also add components  to the `<a-entity>` like camera or sound
+* Add .(that type of component)
 
 <!-- 
 * Links you used today (websites, videos, etc)
