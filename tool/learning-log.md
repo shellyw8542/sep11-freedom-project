@@ -49,6 +49,7 @@ Project: **Helpful learning website**
 * Adding this to the example made the model more realistic
 * You can also add components  to the `<a-entity>` like camera or sound
 * Add .(that type of component)
+* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well
 
 <!-- 
 * Links you used today (websites, videos, etc)
