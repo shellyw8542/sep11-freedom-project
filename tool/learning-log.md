@@ -2,6 +2,7 @@
 
 Tool: **[Jest](https://jestjs.io/)**
 
+Current tool: ***[A-frame](https://aframe.io/)***
 Project: **Helpful learning website**
 
 ---
@@ -52,11 +53,9 @@ Project: **Helpful learning website**
 * I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well
 
 11/27/2023
-* I challenged Shubata to do a model of a villain
-* This challenge was suppose to help test our prior knowledge about A-frame and also help with the design
 * Shubata gave me a helpful [video](https://www.youtube.com/watch?v=HrLsr-nzZGA)
 * As well as a good [tinker place](https://glitch.com/edit/#!/glow-viridian-mallet?path=index.html%3A10%3A48) for A-frame
-* 
+* In the video it explains 
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
