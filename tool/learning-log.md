@@ -54,7 +54,7 @@ Project: **Helpful learning website**
 
 11/27/2023
 * Shubata gave me a helpful [video](https://www.youtube.com/watch?v=HrLsr-nzZGA)
-* As well as a good [tinker place](https://glitch.com/edit/#!/glow-viridian-mallet?path=index.html%3A10%3A48) for A-frame
+* I created a tinker place in my ide sandbox
 * In the video it explains the `<a-cursor>`
 * Explains that `<a-cursor>` when the player selects the object, the object is selected in the coding
 * Raycaster is a way to extend a line towards a place and check if it is near or on another object/entity
@@ -62,6 +62,7 @@ Project: **Helpful learning website**
 * Fusetimeout is the amount of time in the timer <-- this goes my milliseconds  
 `<a-cursor fuse="true" fusetimeout="8000"></a-cursor>`
 * When doing raycaster be careful and choose what object should be selected to be a raycaster because it will generally pick everything the player chooses
+* 
 
 
 <!-- 
