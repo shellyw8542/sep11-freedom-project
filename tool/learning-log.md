@@ -55,7 +55,11 @@ Project: **Helpful learning website**
 11/27/2023
 * Shubata gave me a helpful [video](https://www.youtube.com/watch?v=HrLsr-nzZGA)
 * As well as a good [tinker place](https://glitch.com/edit/#!/glow-viridian-mallet?path=index.html%3A10%3A48) for A-frame
-* In the video it explains 
+* In the video it explains the `<a-cursor>`
+* Explains that `<a-cursor>` when the player selects the object, the object is selected in the coding
+* raycaster
+* fuse
+* fusetimeout
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
