@@ -73,7 +73,16 @@ Project: **Shooter Game**
 12/04/2023
 * I went back to the A-frame and seeked something that might be helpful towards our game.
 * [Shadow](https://aframe.io/docs/1.5.0/components/shadow.html)
-* 
+* Shadows are used for a more realistic touch in the model
+* You would need to have `<a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>`
+* The castShadow has to be true
+* As well as the compound of `[light](https://aframe.io/docs/1.5.0/components/light.html#configuring-shadows)`
+* The coding depends on what you would like on the model
+* For `intensity` this is used to light up the top of the model.
+* It can be used like: `<a-entity light= intensity: 1.5 </a-entity>`
+* I didn't understand what the position meant
+* Position is supposed to be for the light source when you can adjust where you want the light source to be from 
+
 
 
 
