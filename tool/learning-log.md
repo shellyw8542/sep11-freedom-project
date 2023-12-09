@@ -79,7 +79,7 @@ Project: **Shooter Game**
 * As well as the compound of `[light](https://aframe.io/docs/1.5.0/components/light.html#configuring-shadows)`
 * The coding depends on what you would like on the model
 * For `intensity` this is used to light up the top of the model.
-* It can be used like: `<a-entity light= intensity: 1.5 </a-entity>`
+* It can be used like: <a-entity light= intensity: 1.5 </a-entity>
 * I didn't understand what the position meant
 * Position is supposed to be for the light source when you can adjust where you want the light source to be from 
 
