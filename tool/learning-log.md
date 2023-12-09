@@ -1,8 +1,7 @@
 # Tool Learning Log
 
-Tool: **[Jest](https://jestjs.io/)**
-
 Current tool: ***[A-frame](https://aframe.io/)***
+
 Project: **Helpful learning website**
 
 ---
