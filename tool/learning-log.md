@@ -2,7 +2,7 @@
 
 Current tool: ***[A-frame](https://aframe.io/)***
 
-Project: **Helpful learning website**
+Project: **Shooter Game**
 
 ---
 
@@ -63,12 +63,19 @@ Project: **Helpful learning website**
 * When doing raycaster be careful and choose what object should be selected to be a raycaster because it will generally pick everything the player chooses
 * Raycaster seems to have a small circle in the middle of the screen  
 `<a-entity camera position="0 2 0" look-control wasd-controls>`
-* When camera positioning is also really important because  it starts the user off with this position
-* Controls of look can make you move your cursor along with your POV so whenever you left-click it would changes the POV
-* Controls of wasd the POV would move forward, backwards, sideways if you press wasd
+* When camera positioning is also critical because  it starts the user off with this position
+* Controls of look can make you move your cursor along with your POV so whenever you left-click it changes the POV
+* Controls of wasd the POV would move forward, backward, sideways if you press wasd
 * With the controls you have to be organized with it. If the controls of wasd are spelled wrong then the whole coding doesn't work.
 * In the sandbox, following the video I couldn't access my website so I had to switch to jsbin
 * Whenever doing the coding do it in jsbin and paste the coding to the sandbox so next time referring to that topic go back on the sandbox and try to keep it organized. 
+
+12/04/2023
+* I went back to the A-frame and seeked something that might be helpful towards our game.
+* [Shadow](https://aframe.io/docs/1.5.0/components/shadow.html)
+* 
+
+
 
 
 <!-- 
