@@ -80,9 +80,11 @@ Project: **Shooter Game**
 * The coding depends on what you would like on the model
 * For `intensity` this is used to light up the top of the model.
 * It can be used like: <a-entity light= intensity: 1.5 </a-entity>
-* I didn't understand what the position meant
-* Position is supposed to be for the light source when you can adjust where you want the light source to be from 
-
+* Another idea is positioning
+* I thought that positioning was just to position the models' angle
+* It made me curious about what positioning for light does
+* Position is supposed to be for the light source when you can adjust where you want the light source to be from
+* The coding for positioning is just like the other model coding: `position="1 1 1"`
 
 
 
