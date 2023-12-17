@@ -1,7 +1,7 @@
 # Entry 2
 ##### 12/18/2023
 When learning my tool in A-frame, there are a lot of new concepts in A-frame for HTML and Javascript. My partner and I would normally talk with each other about what we plan to learn for the week and what we can use for our freedom project. My partner, Shubata, has more experience in A-frame than I do, so I needed to understand some of the context and basic HTML first to understand what to do next. I understood and watched a lot of tutorials about some different projects about A-frame. I've learned some important components to help with my shooter game.   
-When following a [tutorial](https://www.youtube.com/watch?v=ZFTSLHd7xgY&ab_channel=DaniloPasquariello), I felt that A-frame had a lot of custom and straightforward elements. For example, the video explains `video id` the purpose of this element is suppose to help show the background of that component with a video. To this, I tried to create a video background however, I came across a problem. When getting a video to put in my coding. Nothing would work. 
+When following a [tutorial](https://www.youtube.com/watch?v=ZFTSLHd7xgY&ab_channel=DaniloPasquariello), I felt that A-frame had a lot of custom and straightforward elements. For example, the video explains `video id` the purpose of this element is to help show the background of that component with a video. To this, I tried to create a video background however, I came across a problem. When getting a video to put in my coding. Nothing would work. 
 ```
    <a-scene>
       <video id= "gif" scr ="(video link)" </video>
@@ -17,9 +17,12 @@ This is the coding that I applied towards Jsbin, however, it gave me a blank scr
       </a-scene>
 ```
 This coding helped me understand the concept of `<a-asset>` more, it is supposed to be a portion of coding to load. Another thing that I've learned was `<a-videosphere>`, this element's function is to adjust the `geometry` and `rotation` of the video by using the `<video id>`.  
-Another idea that the tool A-frame sparked my interest was the visuals and interaction that I wanted to learn. Now I finally have the opportunity to learn it. Shubata gave me this [video](https://www.youtube.com/watch?v=HrLsr-nzZGA&ab_channel=UWRealityLab) to help me understand the interactions and how to code them. 
-
-
-[Previous](entry01.md) | [Next](entry03.md)
-
-[Home](../README.md)
+Another idea that the tool A-frame sparked my interest was the visuals and interaction that I wanted to learn. Now I finally have the opportunity to learn it. Shubata gave me this [video](https://www.youtube.com/watch?v=HrLsr-nzZGA&ab_channel=UWRealityLab) to help me understand more about the interactions in A-frame and how to code them. I believe that this is very helpful for my project because I wanted it to be interactive on the keyboard. In the video, it shows the element of `<a-cursor>` and  `wasd-controls`, the `wasd-controls` can make the camera move. For example `w` would move forward, `a` would move to the left, and so on. `<a-cursor` is  for mouse controls. But what does this look like in coding?  
+```
+   <a-scene>
+        <a-entity camera position="0 2 0" look-control wasd-controls>
+          <a-cursor id="cursor" fuse="true" fusetimeout="3000"></a-cursor>
+        </a-entity>
+      </a-entity>
+   </a-scene>
+```
