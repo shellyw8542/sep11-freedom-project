@@ -26,3 +26,4 @@ Another idea that the tool A-frame sparked my interest was the visuals and inter
       </a-entity>
    </a-scene>
 ```
+Something that I was curious about in the coding was the camera positioning. What was the point of having the positions if you can control the model's point of view? I tried to add different numbers for the length with and height and it turns out that the positioning is only for the initial position of the camera. I've also learned more about fuse, which might also be helpful for my project.
