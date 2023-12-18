@@ -94,7 +94,7 @@ Project: **Shooter Game**
 * We decided to split up the work and whatever is more interested for us
 * I picked Laser-control and Shubata picked Animation
 * DoF --> degree of freedom = movement in a limited space
-* 
+* They require rotation, input, and laser-based interaction
 
 <!-- 
 * Links you used today (websites, videos, etc)
