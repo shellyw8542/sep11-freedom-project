@@ -93,8 +93,8 @@ Project: **Shooter Game**
 * We would both be learning [Animation](https://aframe.io/docs/1.5.0/components/animation.html) and [Laser-control](https://aframe.io/docs/1.5.0/components/laser-controls.html)
 * We decided to split up the work and whatever is more interested for us
 * I picked Laser-control and Shubata picked Animation
-* For Laser-control
-
+* DoF --> degree of freedom = movement in a limited space
+* 
 
 <!-- 
 * Links you used today (websites, videos, etc)
