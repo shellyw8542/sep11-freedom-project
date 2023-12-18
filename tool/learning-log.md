@@ -15,6 +15,7 @@ Project: **Shooter Game**
 
 10/29/2023:
 * Got to download Jestjs on my ide sandbox.
+
 11/5/2023:
 * Gotten to create a platform for jest runs
 * Getting started had a test that you will need to "run npm" with
@@ -34,7 +35,7 @@ Project: **Shooter Game**
 * Autoplay loop can be true or false (true means keep playing) (false stop playing)
 * Came across an error with Jsbin when tinkering with the demo with autoplay false.
 * When testing loops (with A-frame) right-click and turn off the loop.
-* Play and Pause can be used by javascript `play-pause` in HTML
+* Play and Pause can be used by javascript `play-pause` in HTML  
 
 11/20/2023:
 * Experimented with [Responsive UI](https://aframe.io/examples/showcase/responsiveui/)
@@ -49,7 +50,7 @@ Project: **Shooter Game**
 * Adding this to the example made the model more realistic
 * You can also add components  to the `<a-entity>` like camera or sound
 * Add .(that type of component)
-* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well
+* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well  
 
 11/27/2023
 * Shubata gave me a helpful [video](https://www.youtube.com/watch?v=HrLsr-nzZGA)
@@ -84,9 +85,15 @@ Project: **Shooter Game**
 * I thought that positioning was just to position the models' angle
 * It made me curious about what positioning for light does
 * Position is supposed to be for the light source when you can adjust where you want the light source to be from
-* The coding for positioning is just like the other model coding: `position="1 1 1"`
+* The coding for positioning is just like the other model coding: `position="1 1 1"` 
 
-
+12/18/2023
+* Discuss what to learn with Shubata
+* We wanted to learn about the components given in A-frame
+* We would both be learning [Animation](https://aframe.io/docs/1.5.0/components/animation.html) and [Laser-control](https://aframe.io/docs/1.5.0/components/laser-controls.html)
+* We decided to split up the work and whatever is more interested for us
+* I picked Laser-control and Shubata picked Animation
+* For Laser-control
 
 
 <!-- 
