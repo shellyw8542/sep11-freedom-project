@@ -95,6 +95,8 @@ Project: **Shooter Game**
 * I picked Laser-control and Shubata picked Animation
 * DoF --> degree of freedom = movement in a limited space
 * They require rotation, input, and laser-based interaction
+* Laser controls contain a lot of different components in order to create different visuals, but itself doesn't work.
+* The compounds for Laser-controls are [vive-controls](https://aframe.io/docs/1.5.0/components/vive-controls.html), [oculus-touch-controls](https://aframe.io/docs/1.5.0/components/oculus-touch-controls.html), and [windows-motion-controls](https://aframe.io/docs/1.5.0/components/windows-motion-controls.html)
 
 <!-- 
 * Links you used today (websites, videos, etc)
