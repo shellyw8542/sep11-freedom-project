@@ -35,7 +35,7 @@ Project: **Shooter Game**
 * Autoplay loop can be true or false (true means keep playing) (false stop playing)
 * Came across an error with Jsbin when tinkering with the demo with autoplay false.
 * When testing loops (with A-frame) right-click and turn off the loop.
-* Play and Pause can be used by javascript `play-pause` in HTML  
+* Play and Pause can be used by javascript `play-pause`  
 
 11/20/2023:
 * Experimented with [Responsive UI](https://aframe.io/examples/showcase/responsiveui/)
