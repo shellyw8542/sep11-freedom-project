@@ -24,7 +24,12 @@ This would be how the coding would look like:
 ```
 When I played this on Jsbin, the autoplay remained as true, I tried to change the coding taking away the autoplay loop but it didn't work. I tried refreshing but it still didn't work, when I right-clicked the video, it showed a loop function and you can turn it off or on. There is another idea of play and pause, which can be expressed in Javascript as a function with `if and else` statements. I believe I probably will not use it but I got a peak about how the function works from the tutorial.  
 
-[Responsive UI](https://aframe.io/examples/showcase/responsiveui/) seemed new to me and I wanted to see how it works. I tried tinkering with the A-frame example by using the `Inspect Scene`
+[Responsive UI](https://aframe.io/examples/showcase/responsiveui/) seemed new to me and I wanted to see how it works. I tried tinkering with the A-frame example by using the `Inspect Scene`. After doing a bit of observation, I realized that there is a lot of `<a-entity>` in elements. I decided to check out the `entity` element in A-frame. I've learned that the element of `entity` itself doesn't do anything but rather it can have attachments like `geometry`, `material`, and `light`. For example:  
+```
+<a-entity geometry="primitive: box" material="color: red" light="type: point; intensity: 2.0">
+```
+This coding makes the model more realistic because the light becomes like a shadow and the intensity is the scaling of lightness. You can also link the entity to components like `.querySelector('aentity[camera]').components.camera`. In a sense, I observed that the element of `<a-entity>` was a lot like a regular id in HTML, however, the only difference was that you can adjust it. The connection is that you can link it with Javascript and like an id it contains a certain amount of elements.   
+
 Another idea that the tool A-frame sparked my interest was the visuals and interaction that I wanted to learn. Now I finally have the opportunity to learn it. Shubata gave me this [video](https://www.youtube.com/watch?v=HrLsr-nzZGA&ab_channel=UWRealityLab) to help me understand more about the interactions in A-frame and how to code them. I believe that this is very helpful for my project because I wanted it to be interactive on the keyboard. In the video, it shows the element of `<a-cursor>` and  `wasd-controls`, the `wasd-controls` can make the camera move. For example `w` would move forward, `a` would move to the left, and so on. `<a-cursor` is for mouse controls. But what does this look like in coding?  
 ```
    <a-scene>
@@ -35,5 +40,9 @@ Another idea that the tool A-frame sparked my interest was the visuals and inter
    </a-scene>
 ```
 Something that I was curious about in the coding was the camera positioning. What was the point of having the positions if you can control the model's point of view? I tried to add different numbers for the length and height and it turns out that the positioning is only for the camera's initial position. I've also learned more about fuse, which might also be helpful for my project. Fuse's function is basically like a timer and a `fusetimeout` gives the number of that timer in seconds. So it'll be `<a-cursor fuse="true" fusetimeout="8000"></a-cursor>`.  
+
+
+
+
 
 I am currently in the second step of the engineering design process where I am researching to learn more about my tool and gather information and components to help my freedom project. Some takeaways that I've learned while tinkering with my tools were: Consideration, How to learn, and Communication. When I started to be optimistic about my tool, I learned a lot of new and important things that can be helpful with my freedom project. I learned by trying things out on Jsbin, watching tutorials about those components, asking questions, and reading from the website. I've been taking into consideration the components that might help in my project. Lastly, I've been communicating throughout the weeks with my partner to help her decide on what to do and what should we do next. I also ask my partner for help in case I do not understand the problem with my coding. 
