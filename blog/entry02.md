@@ -22,7 +22,9 @@ This would be how the coding would look like:
 ```
 <video id = "gif" autoplay loop="false" scr ="(video link)"</video>
 ```
-When I played this on Jsbin, the autoplay remained as true, I tried to change the coding taking away the autoplay loop but it didn't work. I tried refreshing but it still didn't work, when I right-clicked the video, it showed a loop function and you can turn it off or on. You can also use the play and pause functions described in Javascript.
+When I played this on Jsbin, the autoplay remained as true, I tried to change the coding taking away the autoplay loop but it didn't work. I tried refreshing but it still didn't work, when I right-clicked the video, it showed a loop function and you can turn it off or on. There is another idea of play and pause, which can be expressed in Javascript as a function with `if and else` statements. I believe I probably will not use it but I got a peak about how the function works from the tutorial.  
+
+[Responsive UI](https://aframe.io/examples/showcase/responsiveui/) seemed new to me and I wanted to see how it works. I tried tinkering with the A-frame example by using the `Inspect Scene`
 Another idea that the tool A-frame sparked my interest was the visuals and interaction that I wanted to learn. Now I finally have the opportunity to learn it. Shubata gave me this [video](https://www.youtube.com/watch?v=HrLsr-nzZGA&ab_channel=UWRealityLab) to help me understand more about the interactions in A-frame and how to code them. I believe that this is very helpful for my project because I wanted it to be interactive on the keyboard. In the video, it shows the element of `<a-cursor>` and  `wasd-controls`, the `wasd-controls` can make the camera move. For example `w` would move forward, `a` would move to the left, and so on. `<a-cursor` is for mouse controls. But what does this look like in coding?  
 ```
    <a-scene>
