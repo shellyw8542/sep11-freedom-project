@@ -39,10 +39,7 @@ Another idea that the tool A-frame sparked my interest was the visuals and inter
       </a-entity>
    </a-scene>
 ```
-Something that I was curious about in the coding was the camera positioning. What was the point of having the positions if you can control the model's point of view? I tried to add different numbers for the length and height and it turns out that the positioning is only for the camera's initial position. I've also learned more about fuse, which might also be helpful for my project. Fuse's function is basically like a timer and a `fusetimeout` gives the number of that timer in seconds. So it'll be `<a-cursor fuse="true" fusetimeout="8000"></a-cursor>`.  
-
-
-
-
+Something that I was curious about in the coding was the camera positioning. What was the point of having the positions if you can control the model's point of view? I tried to add different numbers for the length and height and it turns out that the positioning is only for the camera's initial position. I've also learned more about fuse, which might also be helpful for my project. Fuse's function is basically like a timer and a `fusetimeout` gives the number of that timer in seconds. So it'll be `<a-cursor fuse="true" fusetimeout="8000"></a-cursor>`. While watching the tutorial I came across the component of `Raycaster`. A raycaster is a way to extend a line towards a place and check if it is near or on another object/entity. When I was coding the Raycaster, I saw that in the middle of the screen, it showed a circle as described in the coding above.  
+Lastly I wanted to learn and explore components that can help with my project. 
 
 I am currently in the second step of the engineering design process where I am researching to learn more about my tool and gather information and components to help my freedom project. Some takeaways that I've learned while tinkering with my tools were: Consideration, How to learn, and Communication. When I started to be optimistic about my tool, I learned a lot of new and important things that can be helpful with my freedom project. I learned by trying things out on Jsbin, watching tutorials about those components, asking questions, and reading from the website. I've been taking into consideration the components that might help in my project. Lastly, I've been communicating throughout the weeks with my partner to help her decide on what to do and what should we do next. I also ask my partner for help in case I do not understand the problem with my coding. 
