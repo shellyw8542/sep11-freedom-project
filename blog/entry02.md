@@ -9,7 +9,7 @@ When following a [tutorial](https://www.youtube.com/watch?v=ZFTSLHd7xgY&ab_chann
       </a-scene>
 ```
 This is the coding that I applied towards Jsbin, however, it gave me a blank screen. After that, I tried a different video, I thought and believed that it was the video problem since I used a GIF. When I returned to the video I saw that the video had different components like `<a-assist>` and `<a-videosphere>`. I believed that since it was a lot like `<img>` perhaps it doesn't matter if I added nothing after. However, that wasn't the case when I modified the coding it turned into this:   
-```
+```HTML
     <a-scene>
       <a-asset>
       <video id= "gif" scr ="(video link)" </video>
