@@ -43,8 +43,8 @@ Project: **Shooter Game**
 * Whenever you click on the element it focuses on that element
 * Uses `<a-entity>` for a lot of these elements and projects
 * Decided to look at the [entity](https://aframe.io/docs/1.5.0/core/entity.html) element
-* entity's itself does not do anything
-* The functions of entity's is to attach `geometry`, `material`, and `light`
+* entity itself does not do anything
+* The functions of entities are to attach `geometry`, `material`, and `light`
 * Example: `<a-entity geometry="primitive: box" material="color: red"
           light="type: point; intensity: 2.0">`
 * Adding this to the example made the model more realistic
@@ -67,12 +67,12 @@ Project: **Shooter Game**
 * When camera positioning is also critical because  it starts the user off with this position
 * Controls of look can make you move your cursor along with your POV so whenever you left-click it changes the POV
 * Controls of wasd the POV would move forward, backward, sideways if you press wasd
-* With the controls you have to be organized with it. If the controls of wasd are spelled wrong then the whole coding doesn't work.
+* With the controls you have to be organized with them. If the controls of wasd are spelled wrong then the whole coding doesn't work.
 * In the sandbox, following the video I couldn't access my website so I had to switch to jsbin
 * Whenever doing the coding do it in jsbin and paste the coding to the sandbox so next time referring to that topic go back on the sandbox and try to keep it organized. 
 
 12/04/2023
-* I went back to the A-frame and seeked something that might be helpful towards our game.
+* I went back to the A-frame and sought something that might be helpful towards our game.
 * [Shadow](https://aframe.io/docs/1.5.0/components/shadow.html)
 * Shadows are used for a more realistic touch in the model
 * You would need to have `<a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>`
@@ -87,16 +87,43 @@ Project: **Shooter Game**
 * Position is supposed to be for the light source when you can adjust where you want the light source to be from
 * The coding for positioning is just like the other model coding: `position="1 1 1"` 
 
-12/18/2023
+12/18/2023 - 1/8/2024
 * Discuss what to learn with Shubata
 * We wanted to learn about the components given in A-frame
 * We would both be learning [Animation](https://aframe.io/docs/1.5.0/components/animation.html) and [Laser-control](https://aframe.io/docs/1.5.0/components/laser-controls.html)
-* We decided to split up the work and whatever is more interested for us
+* We decided to split up the work and whatever is more interesting for us
 * I picked Laser-control and Shubata picked Animation
 * DoF --> degree of freedom = movement in a limited space
 * They require rotation, input, and laser-based interaction
-* Laser controls contain a lot of different components in order to create different visuals, but itself doesn't work.
+* Laser controls contain a lot of different components to create different visuals, but it doesn't work.
 * The compounds for Laser-controls are [vive-controls](https://aframe.io/docs/1.5.0/components/vive-controls.html), [oculus-touch-controls](https://aframe.io/docs/1.5.0/components/oculus-touch-controls.html), and [windows-motion-controls](https://aframe.io/docs/1.5.0/components/windows-motion-controls.html)
+* For the [vive-controls](https://aframe.io/docs/1.5.0/components/vive-controls.html) you will need to understand the tracked controls (which are used for VR controls) <-- I believe that it won't be too useful for me since I cannot test it.
+* Vive-controls are used for controls from different uses to complete a game. For example, controllers, buttons, hand, model, etc.
+* In case we are going to use this feature, this would be an example of the code: `<a-entity vive-controls="hand: left"></a-entity>`
+* The same goes to the [oculus-touch-controls](https://aframe.io/docs/1.5.0/components/oculus-touch-controls.html)and [windows-motion-controls](https://aframe.io/docs/1.5.0/components/windows-motion-controls.html)
+* Those components explain the coding for the controls and how to code them 
+* Nextly, I will be focusing on the laser-controls, which besides all the controls, it needs the component of cursor and raycaster.
+* Based on the document it explains that the cursor is used to help the certain area that is in the cursor is in.
+* The Raycaster is used for the drawing of the lasers.
+* I followed a [tutorial](https://www.youtube.com/watch?v=vQ85u3dzmZY&ab_channel=clarecreate) to get a clear understanding and to tinker the coding with them.
+* The tutorial recommends using foxfire to help with a visual representation about the VR
+* So far I gotten in my coding:
+```
+<a-scene school-playground>
+    <a-entity superhands d="rightHand" hand-controls="hand: right: handModelStrle: lowPoly; color:black></a-entity>laser-controls="hand: left"></a-entity>
+  <a-box
+    position="-1.5 1.5 -3"
+     color="yellow"
+      animation="property:rotation; from: 0 0 0 to: 360 360 0; dur:2000; startEvents:click;"
+    ></a-box>
+</a-scene>
+```
+* As explained in the video
+* The lowPoly in the hand-controls makes the model of the hand
+* [Superhands](https://github.com/c-frame/aframe-super-hands-component) can make the object more interactive by making it have the ability of being hoverable, clickable, grabbable, stretchable, draggable, and droppable
+* When trying to tinker with this coding, I realized how hard it can with test the VR version.
+* All that showed up in the coding for Jsbin was the yellow box, however it was interactive towards the keyboard and mouse. 
+
 
 <!-- 
 * Links you used today (websites, videos, etc)
