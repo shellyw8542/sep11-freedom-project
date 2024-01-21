@@ -152,7 +152,19 @@ Example:
  </a-assets>
 ```
 * After the time goes out for the audio and video replaying (depending on the coding)
-* You could have a timeout before reaching a scene
+* Preloading can be used to avoiding wait time for things to load
+* Preventions of preloading audio and videos are:
+* `autoplay` <- audio
+* `preload="auto"` <- video
+```
+<a-scene>
+  <a-assets>
+    <audio src="something.mp3" autoplay></audio>
+    <video src="random.mp4" preload="auto"></video>
+  </a-assets>
+</a-scene>
+```
+* You could have a timeout before reaching a scene (load)
 * `<a-assets timeout="3000">`
 * Ideally you would want the timer to be 3 seconds
 * It also goes by muliseconds
