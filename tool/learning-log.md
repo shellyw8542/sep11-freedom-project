@@ -122,7 +122,43 @@ Project: **Shooter Game**
 * The lowPoly in the hand-controls makes the model of the hand
 * [Superhands](https://github.com/c-frame/aframe-super-hands-component) can make the object more interactive by making it have the ability of being hoverable, clickable, grabbable, stretchable, draggable, and droppable
 * When trying to tinker with this coding, I realized how hard it can with test the VR version.
-* All that showed up in the coding for Jsbin was the yellow box, however it was interactive towards the keyboard and mouse. 
+* All that showed up in the coding for Jsbin was the yellow box, however it was interactive towards the keyboard and mouse.
+1/13/2024
+* I was browsing at the official documents for the a-frame model
+* Found something that interest me
+* [obj-model](https://aframe.io/docs/1.5.0/components/obj-model.html)
+* The use of this is for loading in an image but by using an .MTL file
+* It would look something like this:    `<a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>`
+* The obj model has two properties:
+* obj and mtl
+* obj is more common then mtl because it is using the generic file
+
+
+
+
+1/21/2024
+* Digging deeper into the [Asset Management System](https://aframe.io/docs/1.5.0/core/asset-management-system.html)
+* This system is for support and better performance in the coding
+* Used for "preloading assets"
+* Usually if your using A-frame, this is normally used for creating games and helping them load
+* Normally you would use `<a-assist>` and `<a-scene>` with these elements
+* `<a-asset-item>, <audio>, <img>, and <video>`
+* Doesn't create any loadouts or errors if they have a time limit
+Example:
+```
+  <a-assets>
+  <video id="pig" src="pig.mp4">
+  <audio id="oink" src="oink.mp3"></audio>
+ </a-assets>
+```
+* After the time goes out for the audio and video replaying (depending on the coding)
+* You could have a timeout before reaching a scene
+* `<a-assets timeout="3000">`
+* Ideally you would want the timer to be 3 seconds
+* It also goes by muliseconds
+* I think that with this system it might be helpful to understand because since imgs and videos that are planned to be used in our game
+
+
 
 
 <!-- 
