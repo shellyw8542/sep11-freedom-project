@@ -121,17 +121,22 @@ Project: **Shooter Game**
 * As explained in the video
 * The lowPoly in the hand-controls makes the model of the hand
 * [Superhands](https://github.com/c-frame/aframe-super-hands-component) can make the object more interactive by making it have the ability of being hoverable, clickable, grabbable, stretchable, draggable, and droppable
-* When trying to tinker with this coding, I realized how hard it can with test the VR version.
+* When trying to tinker with this coding, I realized how hard it can be to test the VR version.
 * All that showed up in the coding for Jsbin was the yellow box, however it was interactive towards the keyboard and mouse.
+
 1/13/2024
-* I was browsing at the official documents for the a-frame model
-* Found something that interest me
+* I was browsing the official documents for the A-frame model
+* Found something that interests me
 * [obj-model](https://aframe.io/docs/1.5.0/components/obj-model.html)
-* The use of this is for loading in an image but by using an .MTL file
-* It would look something like this:    `<a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>`
+* This is used for loading in an image but by using an.MTL file
+* It would look something like this: `<a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>`
 * The obj model has two properties:
 * obj and mtl
-* obj is more common then mtl because it is using the generic file
+* obj is more common than mtl because it uses the generic file
+* You could use obj + mtl for url or filing
+* File: `<a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>`
+* URL: `<a-entity obj-model="obj: url(...);`
+* Another idea was 
 
 
 
@@ -140,10 +145,10 @@ Project: **Shooter Game**
 * Digging deeper into the [Asset Management System](https://aframe.io/docs/1.5.0/core/asset-management-system.html)
 * This system is for support and better performance in the coding
 * Used for "preloading assets"
-* Usually if your using A-frame, this is normally used for creating games and helping them load
+* Usually if you using A-frame, this is normally used for creating games and helping them load
 * Normally you would use `<a-assist>` and `<a-scene>` with these elements
 * `<a-asset-item>, <audio>, <img>, and <video>`
-* Doesn't create any loadouts or errors if they have a time limit
+* Doesn't create any load-outs or errors if they have a time limit
 Example:
 ```
   <a-assets>
