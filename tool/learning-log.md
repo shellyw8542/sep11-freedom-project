@@ -136,12 +136,8 @@ Project: **Shooter Game**
 * You could use obj + mtl for url or filing
 * File: `<a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>`
 * URL: `<a-entity obj-model="obj: url(...);`
-* Another idea was 
 
-
-
-
-1/21/2024
+1/21 - 1/29/2024
 * Digging deeper into the [Asset Management System](https://aframe.io/docs/1.5.0/core/asset-management-system.html)
 * This system is for support and better performance in the coding
 * Used for "preloading assets"
@@ -174,7 +170,6 @@ Example:
 * Ideally you would want the timer to be 3 seconds
 * It also goes by muliseconds
 * I think that with this system it might be helpful to understand because since imgs and videos that are planned to be used in our game
-
 
 
 
