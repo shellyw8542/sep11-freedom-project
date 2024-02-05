@@ -192,6 +192,8 @@ Example:
 * If the mixin had two of the same properties (same color, or shape) the last one would appear
 * `<a-entity mixin="red blue cube">`
 * This would be red, but blue would show up because it is the last of the color
+* Mixin is used for convenience when coding the same properties, and also combining properties
+* I would most likely use this for my freedom project
 
 
 
