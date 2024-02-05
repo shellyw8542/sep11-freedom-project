@@ -171,6 +171,30 @@ Example:
 * It also goes by muliseconds
 * I think that with this system it might be helpful to understand because since imgs and videos that are planned to be used in our game
 
+2/2/2024
+* [Mixin](https://aframe.io/docs/1.5.0/core/mixins.html)
+* Mixin is used to reuse common sets of compounds
+* It is usually placed in an id
+* For example:
+```
+    <a-mixin id="red" material="color: red"></a-mixin>
+    <a-mixin id="blue" material="color: blue"></a-mixin>
+    <a-mixin id="cube" geometry="primitive: box"></a-mixin>
+```
+* Then after that is in the `<a-assets>`
+```
+  <a-entity mixin="red cube"></a-entity>
+  <a-entity mixin="blue cube"></a-entity>
+```
+* This should appear with a red cube and a blue cube.
+* Due to the mixin taking all the command names and entering the color and properties in the entity
+* The mixin, if it is combined with the names then would create an entity that combines all the things that were provided (that you commanded)
+* If the mixin had two of the same properties (same color, or shape) the last one would appear
+* `<a-entity mixin="red blue cube">`
+* This would be red, but blue would show up because it is the last of the color
+
+
+
 
 
 <!-- 
