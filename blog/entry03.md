@@ -28,7 +28,7 @@ After browsing the A-frame website, I saw something that interested me which was
 ```
 This would appear for a red cube and a blue cube. If the element is like this `<a-entity mixin="red blue cube">` then it would appear as blue because it is the latest color/property. I find both obj-model and mixins convenient for my project because I can have easy access instead of rewriting the elements and properties, as well as rewriting more towards my code. 
 
-Lastly, I was curious about the [Asset Management System](https://aframe.io/docs/1.5.0/core/asset-management-system.html), so I decided to learn more about it. This system is for support and better performance in the coding. It can be used for "preloading assets", which helps create games and help them load. Asset Management Systems use these two compounds <a-assist>, and <a-scene> to pair with these elements: <a-asset-item>, <audio>, <img>, and <video>.
+Lastly, I was curious about the [Asset Management System](https://aframe.io/docs/1.5.0/core/asset-management-system.html), so I decided to learn more about it. This system is for support and better performance in the coding. It can be used for "preloading assets", which helps create games and help them load. Asset Management Systems use these two compounds <a-assist>, and <a-scene> to pair with these elements:<a-asset-item>, <audio>, <img>, and <video>.
 
 ```
   <a-assets>
