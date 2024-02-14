@@ -15,6 +15,7 @@ Project: **Shooter Game**
 
 10/29/2023:
 * Got to download Jestjs on my ide sandbox.
+
 11/5/2023:
 * Gotten to create a platform for jest runs
 * Getting started had a test that you will need to "run npm" with
@@ -34,7 +35,7 @@ Project: **Shooter Game**
 * Autoplay loop can be true or false (true means keep playing) (false stop playing)
 * Came across an error with Jsbin when tinkering with the demo with autoplay false.
 * When testing loops (with A-frame) right-click and turn off the loop.
-* Play and Pause can be used by javascript `play-pause` in HTML
+* Play and Pause can be used by javascript `play-pause`  
 
 11/20/2023:
 * Experimented with [Responsive UI](https://aframe.io/examples/showcase/responsiveui/)
@@ -42,14 +43,14 @@ Project: **Shooter Game**
 * Whenever you click on the element it focuses on that element
 * Uses `<a-entity>` for a lot of these elements and projects
 * Decided to look at the [entity](https://aframe.io/docs/1.5.0/core/entity.html) element
-* entity's itself does not do anything
-* The functions of entity's is to attach `geometry`, `material`, and `light`
+* entity itself does not do anything
+* The functions of entities are to attach `geometry`, `material`, and `light`
 * Example: `<a-entity geometry="primitive: box" material="color: red"
           light="type: point; intensity: 2.0">`
 * Adding this to the example made the model more realistic
 * You can also add components  to the `<a-entity>` like camera or sound
 * Add .(that type of component)
-* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well
+* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well  
 
 11/27/2023
 * Shubata gave me a helpful [video](https://www.youtube.com/watch?v=HrLsr-nzZGA)
@@ -66,15 +67,136 @@ Project: **Shooter Game**
 * When camera positioning is also critical because  it starts the user off with this position
 * Controls of look can make you move your cursor along with your POV so whenever you left-click it changes the POV
 * Controls of wasd the POV would move forward, backward, sideways if you press wasd
-* With the controls you have to be organized with it. If the controls of wasd are spelled wrong then the whole coding doesn't work.
+* With the controls you have to be organized with them. If the controls of wasd are spelled wrong then the whole coding doesn't work.
 * In the sandbox, following the video I couldn't access my website so I had to switch to jsbin
 * Whenever doing the coding do it in jsbin and paste the coding to the sandbox so next time referring to that topic go back on the sandbox and try to keep it organized. 
 
 12/04/2023
-* I went back to the A-frame and seeked something that might be helpful towards our game.
+* I went back to the A-frame and sought something that might be helpful towards our game.
 * [Shadow](https://aframe.io/docs/1.5.0/components/shadow.html)
-* 
+* Shadows are used for a more realistic touch in the model
+* You would need to have `<a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>`
+* The castShadow has to be true
+* As well as the compound of [light](https://aframe.io/docs/1.5.0/components/light.html#configuring-shadows)
+* The coding depends on what you would like on the model
+* For `intensity` this is used to light up the top of the model.
+* It can be used like: <a-entity light= intensity: 1.5 </a-entity>
+* Another idea is positioning
+* I thought that positioning was just to position the models' angle
+* It made me curious about what positioning for light does
+* Position is supposed to be for the light source when you can adjust where you want the light source to be from
+* The coding for positioning is just like the other model coding: `position="1 1 1"` 
+--> blog 1
 
+12/18/2023 - 1/8/2024
+* Discuss what to learn with Shubata
+* We wanted to learn about the components given in A-frame
+* We would both be learning [Animation](https://aframe.io/docs/1.5.0/components/animation.html) and [Laser-control](https://aframe.io/docs/1.5.0/components/laser-controls.html)
+* We decided to split up the work and whatever is more interesting for us
+* I picked Laser-control and Shubata picked Animation
+* DoF --> degree of freedom = movement in a limited space
+* They require rotation, input, and laser-based interaction
+* Laser controls contain a lot of different components to create different visuals, but it doesn't work.
+* The compounds for Laser-controls are [vive-controls](https://aframe.io/docs/1.5.0/components/vive-controls.html), [oculus-touch-controls](https://aframe.io/docs/1.5.0/components/oculus-touch-controls.html), and [windows-motion-controls](https://aframe.io/docs/1.5.0/components/windows-motion-controls.html)
+* For the [vive-controls](https://aframe.io/docs/1.5.0/components/vive-controls.html) you will need to understand the tracked controls (which are used for VR controls) <-- I believe that it won't be too useful for me since I cannot test it.
+* Vive-controls are used for controls from different uses to complete a game. For example, controllers, buttons, hand, model, etc.
+* In case we are going to use this feature, this would be an example of the code: `<a-entity vive-controls="hand: left"></a-entity>`
+* The same goes to the [oculus-touch-controls](https://aframe.io/docs/1.5.0/components/oculus-touch-controls.html)and [windows-motion-controls](https://aframe.io/docs/1.5.0/components/windows-motion-controls.html)
+* Those components explain the coding for the controls and how to code them 
+* Nextly, I will be focusing on the laser-controls, which besides all the controls, it needs the component of cursor and raycaster.
+* Based on the document it explains that the cursor is used to help the certain area that is in the cursor is in.
+* The Raycaster is used for the drawing of the lasers.
+* I followed a [tutorial](https://www.youtube.com/watch?v=vQ85u3dzmZY&ab_channel=clarecreate) to get a clear understanding and to tinker the coding with them.
+* The tutorial recommends using foxfire to help with a visual representation about the VR
+* So far I gotten in my coding:
+```
+<a-scene school-playground>
+    <a-entity superhands d="rightHand" hand-controls="hand: right: handModelStrle: lowPoly; color:black></a-entity>laser-controls="hand: left"></a-entity>
+  <a-box
+    position="-1.5 1.5 -3"
+     color="yellow"
+      animation="property:rotation; from: 0 0 0 to: 360 360 0; dur:2000; startEvents:click;"
+    ></a-box>
+</a-scene>
+```
+* As explained in the video
+* The lowPoly in the hand-controls makes the model of the hand
+* [Superhands](https://github.com/c-frame/aframe-super-hands-component) can make the object more interactive by making it have the ability of being hoverable, clickable, grabbable, stretchable, draggable, and droppable
+* When trying to tinker with this coding, I realized how hard it can be to test the VR version.
+* All that showed up in the coding for Jsbin was the yellow box, however it was interactive towards the keyboard and mouse.
+
+1/13/2024
+* I was browsing the official documents for the A-frame model
+* Found something that interests me
+* [obj-model](https://aframe.io/docs/1.5.0/components/obj-model.html)
+* This is used for loading in an image but by using an.MTL file
+* It would look something like this: `<a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>`
+* The obj model has two properties:
+* obj and mtl
+* obj is more common than mtl because it uses the generic file
+* You could use obj + mtl for url or filing
+* File: `<a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>`
+* URL: `<a-entity obj-model="obj: url(...);`
+
+1/21 - 1/29/2024
+* Digging deeper into the [Asset Management System](https://aframe.io/docs/1.5.0/core/asset-management-system.html)
+* This system is for support and better performance in the coding
+* Used for "preloading assets"
+* Usually if you using A-frame, this is normally used for creating games and helping them load
+* Normally you would use `<a-assist>` and `<a-scene>` with these elements
+* `<a-asset-item>, <audio>, <img>, and <video>`
+* Doesn't create any load-outs or errors if they have a time limit
+Example:
+```
+  <a-assets>
+  <video id="pig" src="pig.mp4">
+  <audio id="oink" src="oink.mp3"></audio>
+ </a-assets>
+```
+* After the time goes out for the audio and video replaying (depending on the coding)
+* Preloading can be used to avoiding wait time for things to load
+* Preventions of preloading audio and videos are:
+* `autoplay` <- audio
+* `preload="auto"` <- video
+```
+<a-scene>
+  <a-assets>
+    <audio src="something.mp3" autoplay></audio>
+    <video src="random.mp4" preload="auto"></video>
+  </a-assets>
+</a-scene>
+```
+* You could have a timeout before reaching a scene (load)
+* `<a-assets timeout="3000">`
+* Ideally you would want the timer to be 3 seconds
+* It also goes by muliseconds
+* I think that with this system it might be helpful to understand because since imgs and videos that are planned to be used in our game
+
+2/2/2024
+* [Mixin](https://aframe.io/docs/1.5.0/core/mixins.html)
+* Mixin is used to reuse common sets of compounds
+* It is usually placed in an id
+* For example:
+```
+    <a-mixin id="red" material="color: red"></a-mixin>
+    <a-mixin id="blue" material="color: blue"></a-mixin>
+    <a-mixin id="cube" geometry="primitive: box"></a-mixin>
+```
+* Then after that is in the `<a-assets>`
+```
+  <a-entity mixin="red cube"></a-entity>
+  <a-entity mixin="blue cube"></a-entity>
+```
+* This should appear with a red cube and a blue cube.
+* Due to the mixin taking all the command names and entering the color and properties in the entity
+* The mixin, if it is combined with the names then would create an entity that combines all the things that were provided (that you commanded)
+* If the mixin had two of the same properties (same color, or shape) the last one would appear
+* `<a-entity mixin="red blue cube">`
+* This would be red, but blue would show up because it is the last of the color
+* Mixin is used for convenience when coding the same properties, and also combining properties
+* I would most likely use this for my freedom project  
+--> blog 2
+  
 
 
 
