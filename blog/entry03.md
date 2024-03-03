@@ -1,7 +1,7 @@
 # Entry 3
-##### X/X/XX
+##### 02/05/2024
 
-Text
+For this entry, I've been learning more about A-frame
 
 [Previous](entry02.md) | [Next](entry04.md)
 
