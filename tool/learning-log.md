@@ -197,7 +197,9 @@ Example:
 * I would most likely use this for my freedom project  
 --> blog 2
   
-
+3/2/2024
+* After creating the MVP, me and my partner decided to start working to the setting
+* 
 
 
 <!-- 
