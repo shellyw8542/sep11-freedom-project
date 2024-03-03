@@ -86,6 +86,7 @@ Project: **Shooter Game**
 * It made me curious about what positioning for light does
 * Position is supposed to be for the light source when you can adjust where you want the light source to be from
 * The coding for positioning is just like the other model coding: `position="1 1 1"` 
+--> blog 1
 
 12/18/2023 - 1/8/2024
 * Discuss what to learn with Shubata
@@ -193,10 +194,12 @@ Example:
 * `<a-entity mixin="red blue cube">`
 * This would be red, but blue would show up because it is the last of the color
 * Mixin is used for convenience when coding the same properties, and also combining properties
-* I would most likely use this for my freedom project
-
-
-
+* I would most likely use this for my freedom project  
+--> blog 2
+  
+3/2/2024
+* After creating the MVP, me and my partner decided to start working to the setting
+* 
 
 
 <!-- 
