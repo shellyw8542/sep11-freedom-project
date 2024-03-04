@@ -195,6 +195,7 @@ Example:
 * This would be red, but blue would show up because it is the last of the color
 * Mixin is used for convenience when coding the same properties, and also combining properties
 * I would most likely use this for my freedom project
+
 --> blog 2
 
 3/2/2024
@@ -204,8 +205,8 @@ Example:
 * This environment component helps us find the setting for the game (just the visuals of the floor/map)
 * After that we wanted to pick what type of environment we could pick out and we chose for now to do the default of it
 * Me and my partner decided to build a model of a building to be used for later developments
-* I struggled a lot with the placements of the windows
-* I tried to shrunken the box by putting width and height by 1
+* I struggled a lot with the placement of the windows
+* I tried to shrink the box by putting width and height by 1
 * Example:
 ```html
 <a-box position="-7 0 12" color="#8b0000" width="4" height="20" depth="4"></a-box> // <-- this is the initial (building)
@@ -217,9 +218,13 @@ Example:
 <a-box position="-3.5 0 6" color="#8b0000" width="1" height="1" depth="3"></a-box> // <-- this is the initial (first window)
 <a-box position="-6.2 5 12.8" color="#8b0000" width="1" height="1" depth="3"></a-box> // <-- this is the initial (finial window)
 ```
-* the first window was off the building, which was hard for me to fix, and I also didn't know what was wrong because I split the building position into half
+* The first window was off the building, which was hard for me to fix, and I also didn't know what was wrong because I split the building position into half
 * Then after a few tinkering moments I found that increasing "0" and "12" in position would've been better because it could move the window more up in the building
-* The width was too far for the range, so I would put not too much apart from the box position but relatively close to the initial position. 
+* The width was too far for the range, so I would put not too much apart from the box position but relatively close to the initial position.
+* Then my partner helped me create details for the building by using an image on by using "scr" in the model of the box
+  ```
+  <a-box src="https://i.imgur.com/mYmmbrp.jpg"
+  ```
 
 
 
