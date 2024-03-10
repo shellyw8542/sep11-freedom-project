@@ -225,6 +225,23 @@ Example:
   ```
   <a-box src="https://i.imgur.com/mYmmbrp.jpg"
   ```
+  3/4/2024
+  * After working on my setting, it was time for the next step in the MVP
+  * I had to do the buildings and cars
+  * I communicated with my partner and split up the work with me doing the building and my partner doing the cars
+  * For my building I've decided to use an image to make it look realistic to the model
+  * `<a-box src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." position="-7 0 12" color="#FFFFFF" width="4" height="20" depth="4"></a-box>`
+  * This makes it so that the image would be in the model of the box
+  * Then after that it was time to make the road because I had some extra time to make it
+  * My partner suggests I use an `<a-plane>`
+  * I didn't know what that element fully does until my partner told me what it does
+  * The <a-plane> is meant for the ground
+  * So what we did was `<a-plane position="20 0 20" rotation="-90 0 0" color="#000000" width ="10" height="0.5"></a-plane>`
+  * This made the road at the bottom and it had a limited space
+  * Then to make that road realistic, we wanted to put the yellow line in the road
+  * `<a-box position="17 0 12" color="#C4A484" width="8" height="12" depth="8"></a-box>`
+  * The yellow line may be a bit longer than the road, however for now since we didn't fully finish the setting and we might need adjustments
+
 
 
 
