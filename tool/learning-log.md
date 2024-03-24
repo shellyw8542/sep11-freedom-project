@@ -254,13 +254,13 @@ Example:
 * I wanted to make the box wider so I used "depth" like the building:
   <a-box position="-1 3 -5"color="red" width="10" depth="3" height="5"></a-box>
 * After that I made the wheels by using the sphere shape
-  ```
+```
   <a-sphere position="-4 1 -5" radius="1.25" color="#000000"></a-sphere>
       <a-sphere position="2 1 -5" radius="1.25" color="#000000"></a-sphere>
 ```
 * Creating the car wasn't bad, it was the size of the car that made it difficult.
 * I also created a window for the car by using a smaller box to fix in the bigger box
-``` <a-box position="2 4 -5"color="blue" width="2" height="2" depth="3.5"></a-box> ```
+  ` <a-box position="2 4 -5"color="blue" width="2" height="2" depth="3.5"></a-box> `
 * In order to see the actual window you would need to make the depth a little higher because then it won't cause a bug or issue in that certain area of the car
 
 
