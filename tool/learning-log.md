@@ -240,8 +240,9 @@ Example:
   * This made the road at the bottom and it had a limited space
   * Then to make that road realistic, we wanted to put the yellow line in the road
   * `<a-box position="17 0 12" color="#C4A484" width="8" height="12" depth="8"></a-box>`
-  * The yellow line may be a bit longer than the road, however for now since we didn't fully finish the setting and we might need adjustments
-  3/24/2024
+  * The yellow line may be a bit longer than the road, however for now since we didn't fully finish the setting and we might need adjustments  
+
+   3/24/2024
 * My partner and I wanted to adjust some of the settings for this week
 * My partner created more buildings and I wanted to create a new design
 * I decided to make a new car
@@ -257,7 +258,11 @@ Example:
   <a-sphere position="-4 1 -5" radius="1.25" color="#000000"></a-sphere>
       <a-sphere position="2 1 -5" radius="1.25" color="#000000"></a-sphere>
 ```
-* Creating the car wasn't bad, it was the size of the car that made it difficult. 
+* Creating the car wasn't bad, it was the size of the car that made it difficult.
+* I also created a window for the car by using a smaller box to fix in the bigger box
+``` <a-box position="2 4 -5"color="blue" width="2" height="2" depth="3.5"></a-box> ```
+* In order to see the actual window you would need to make the depth a little higher because then it won't cause a bug or issue in that certain area of the car
+
 
 
 
