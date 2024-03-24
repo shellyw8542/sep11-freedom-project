@@ -241,7 +241,23 @@ Example:
   * Then to make that road realistic, we wanted to put the yellow line in the road
   * `<a-box position="17 0 12" color="#C4A484" width="8" height="12" depth="8"></a-box>`
   * The yellow line may be a bit longer than the road, however for now since we didn't fully finish the setting and we might need adjustments
-
+  3/24/2024
+* My partner and I wanted to adjust some of the settings for this week
+* My partner created more buildings and I wanted to create a new design
+* I decided to make a new car
+* For the car you would need to have different shapes/models
+* I wanted to have a box, sphere, and triangle
+* At first, I thought that I would use the width, length, and height features however it didn't work in my favor
+* The length feature didn't do much for the box:
+`<a-box position="-1 3 -5"color="red" width="10" length="30" height="5"></a-box>`
+* I wanted to make the box wider so I used "depth" like the building:
+  <a-box position="-1 3 -5"color="red" width="10" depth="3" height="5"></a-box>
+* After that I made the wheels by using the sphere shape
+  ```
+  <a-sphere position="-4 1 -5" radius="1.25" color="#000000"></a-sphere>
+      <a-sphere position="2 1 -5" radius="1.25" color="#000000"></a-sphere>
+```
+* Creating the car wasn't bad, it was the size of the car that made it difficult. 
 
 
 
