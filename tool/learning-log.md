@@ -261,7 +261,7 @@ Example:
 * Creating the car wasn't bad, it was the size of the car that made it difficult.
 * I also created a window for the car by using a smaller box to fix in the bigger box
   ` <a-box position="2 4 -5"color="blue" width="2" height="2" depth="3.5"></a-box> `
-* In order to see the actual window you would need to make the depth a little higher because then it won't cause a bug or issue in that certain area of the car
+* To see the actual window you would need to make the depth a little higher because then it won't cause a bug or issue in that certain area of the car
 
 
 
