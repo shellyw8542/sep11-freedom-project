@@ -263,6 +263,10 @@ Example:
   ` <a-box position="2 4 -5"color="blue" width="2" height="2" depth="3.5"></a-box> `
 * To see the actual window you would need to make the depth a little higher because then it won't cause a bug or issue in that certain area of the car
 
+03/31/2024
+* Me and my partner wanted to try to make it so when you press a key, you shoot
+* However, after looking at the shooting functions for multiple videos and I couldn't understand the coding that was happening in javascript 
+* I decided to create 
 
 
 
