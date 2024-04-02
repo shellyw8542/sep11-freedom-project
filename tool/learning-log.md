@@ -267,10 +267,10 @@ Example:
 * Me and my partner wanted to try to make it so when you press a key, you shoot
 * However, after looking at the shooting functions for multiple videos I couldn't understand the coding that was happening in javascript 
 * We had a lot of videos to help guide us like:
-https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/
-https://www.youtube.com/watch?v=q3bjSDTgUAg
-https://www.youtube.com/watch?v=SeV7RmjxfTY
-https://www.youtube.com/watch?v=t5Hou5QsRiE
+          * https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/
+          * https://www.youtube.com/watch?v=q3bjSDTgUAg
+          * https://www.youtube.com/watch?v=SeV7RmjxfTY
+          * https://www.youtube.com/watch?v=t5Hou5QsRiE
 * We reviewed it and came to realize that they had this "codechanger" website
 * We tried some coding with the codechanger website like: 
 `<a-cursor intersection-spawn="Event: click' mixin:voxel;"><a-cursor>`
@@ -280,8 +280,19 @@ https://www.youtube.com/watch?v=t5Hou5QsRiE
 * The starter code wasn't working so we checked the official website for "code changers"
 * The official website was shutted down and then we didn't know how to start
 * We tried to use event listener: `.addEventListener("keypress", function);` but we didn't know how to start it
-* 
-
+* After we finished our discussion I went to try out the coding without codechanger
+```
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>  
+  </head>
+  <body>
+    <a-scene id="myScene">
+      <a-entity environment="preset:forest;"></a-entity>
+      <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
+      <a-camera id="myCamera" position="0 1 0">
+        <a-cursor = "event: keypress; mixin: voxel"></a-cursor>
+```
+* That didn't work but it made the loading faster, and I might need a little more understanding about the `a-cursor` and `events`. In a-frame to continue with the function of shoot/throw
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
