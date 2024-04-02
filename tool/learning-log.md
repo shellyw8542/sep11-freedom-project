@@ -265,11 +265,22 @@ Example:
 
 03/31/2024
 * Me and my partner wanted to try to make it so when you press a key, you shoot
-* However, after looking at the shooting functions for multiple videos and I couldn't understand the coding that was happening in javascript 
-* I decided to create 
-
-
-
+* However, after looking at the shooting functions for multiple videos I couldn't understand the coding that was happening in javascript 
+* We had a lot of videos to help guide us like:
+https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/
+https://www.youtube.com/watch?v=q3bjSDTgUAg
+https://www.youtube.com/watch?v=SeV7RmjxfTY
+https://www.youtube.com/watch?v=t5Hou5QsRiE
+* We reviewed it and came to realize that they had this "codechanger" website
+* We tried some coding with the codechanger website like: 
+`<a-cursor intersection-spawn="Event: click' mixin:voxel;"><a-cursor>`
+* This didn't change anything in the code and it also didn't have a function for it
+* This was supposed to be the coding to help make the player able to shoot
+* Then we wanted to see if it works on the video, so we tested the starter code provided: https://replit.com/@codechangers/Targets-Starter
+* The starter code wasn't working so we checked the official website for "code changers"
+* The official website was shutted down and then we didn't know how to start
+* We tried to use event listener: `.addEventListener("keypress", function);` but we didn't know how to start it
+* 
 
 <!--
 * Links you used today (websites, videos, etc)
