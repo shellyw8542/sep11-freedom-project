@@ -293,12 +293,30 @@ Example:
         <a-cursor = "event: keypress; mixin: voxel"></a-cursor>
 
 04/7/24
-* Me and my partner was conflicted and found that the shooter function more difficult then we expect
-* We decided to go look at some functions on how to throw in A-frame
-* I've researched 
-
+* Me and my partner was conflicted and found that the shooter function was more difficult than we expect
+* We decided to go look at some functions on how to throw in an A-frame
+* Went to research at three.js because a-frame was is part in three.js
+* In three.js it has this [physic](https://threejs-journey.com/lessons/physics#ammo-js)
+* I also saw this [video](https://www.youtube.com/watch?v=30bO8SBIZYw)
+* In the video you can be able to use a raycaster when shooting a ball
 ```
-* That didn't work but it made the loading faster, and I might need a little more understanding about the `a-cursor` and `events`. In a-frame to continue with the function of shoot/throw
+function onMouseDown(event){
+          mouseCoords.set // set the mouse on the origin
+          (event.clientX / innerWidth) * 2 - 1,
+          - (event.clientY / innerHeight) * 2 + 1
+);
+raycaster.setFromCamera(mouseCoords,Camera)
+```
+* This coding helps set up the initial mouse coordinates and camera
+* After that code, you will need to have [ammo.js](https://github.com/kripken/ammo.js/?tab=readme-ov-file)
+* The video also provided us with the addeventlistener
+```
+function addEventHandlers(){
+          event.addEventListener('mousedown', onMouseDown, false)
+```
+* The raycaster function would have to have a follow-up of coding from the `addEventHandlers()` to function after the mouse shoots
+* I will be discussing more with my partner about this video and to see if it'll help with our project. However, I believe that it is useful to have because three.js has physics to make the ball shoot and slowly go down
+* It also confirms my thinking about the addEventListener into the code for shooting
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
