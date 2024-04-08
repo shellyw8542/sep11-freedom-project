@@ -291,7 +291,7 @@ Example:
       <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
       <a-camera id="myCamera" position="0 1 0">
         <a-cursor = "event: keypress; mixin: voxel"></a-cursor>
-
+```
 04/7/24
 * Me and my partner was conflicted and found that the shooter function was more difficult than we expect
 * We decided to go look at some functions on how to throw in an A-frame
@@ -317,6 +317,8 @@ function addEventHandlers(){
 * The raycaster function would have to have a follow-up of coding from the `addEventHandlers()` to function after the mouse shoots
 * I will be discussing more with my partner about this video and to see if it'll help with our project. However, I believe that it is useful to have because three.js has physics to make the ball shoot and slowly go down
 * It also confirms my thinking about the addEventListener into the code for shooting
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
