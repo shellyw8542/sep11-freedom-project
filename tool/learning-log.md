@@ -291,6 +291,12 @@ Example:
       <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
       <a-camera id="myCamera" position="0 1 0">
         <a-cursor = "event: keypress; mixin: voxel"></a-cursor>
+
+04/7/24
+* Me and my partner was conflicted and found that the shooter function more difficult then we expect
+* We decided to go look at some functions on how to throw in A-frame
+* I've researched 
+
 ```
 * That didn't work but it made the loading faster, and I might need a little more understanding about the `a-cursor` and `events`. In a-frame to continue with the function of shoot/throw
 <!--
