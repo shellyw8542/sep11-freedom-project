@@ -317,7 +317,9 @@ function addEventHandlers(){
 * The raycaster function would have to have a follow-up of coding from the `addEventHandlers()` to function after the mouse shoots
 * I will be discussing more with my partner about this video and to see if it'll help with our project. However, I believe that it is useful to have because three.js has physics to make the ball shoot and slowly go down
 * It also confirms my thinking about the addEventListener into the code for shooting
-
+04/14/2024
+* Me and my partner were discussing about three.js and we were watching the video that I found last week
+* 
 
 <!--
 * Links you used today (websites, videos, etc)
