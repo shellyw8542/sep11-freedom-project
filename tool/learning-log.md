@@ -318,8 +318,32 @@ function addEventHandlers(){
 * I will be discussing more with my partner about this video and to see if it'll help with our project. However, I believe that it is useful to have because three.js has physics to make the ball shoot and slowly go down
 * It also confirms my thinking about the addEventListener into the code for shooting
 04/14/2024
-* Me and my partner were discussing about three.js and we were watching the video that I found last week
-* 
+* Me and my partner were discussing three.js and we were watching the video that I found last week
+* I installed Three.js and tried to work link both three.js and a-frame
+* I also introduced physics to my partner
+* Since codechangers was still down I wanted to research an alternative for throwing a ball
+* I also came across this `https://astokum.github.io/threejs-cannonjs-physics-simulation-3Da`
+* Me and my partner found the code very confusing because we had not learned anything about three.js
+* I found this concept of [raycasters](https://sbcode.net/threejs/raycaster/) on three js that might help the project if we end up doing three.js
+* Raycasters are important for many purposes like showing the distance between the cameras direct from the raycaster's position
+* In the example, it shows that they used the raycaster, but also when you click the mouse twice you get to spawn a triangle/
+ ```
+renderer.domElement.addEventListener('mousemove', onMouseMove, false)
+
+ function onMouseMove(event: MouseEvent) {
+     const mouse = {
+         x: (event.clientX / renderer.domElement.clientWidth) * 2 - 1,
+         y: -(event.clientY / renderer.domElement.clientHeight) * 2 + 1
+     } as THREE.Vector2
+
+          console.log(mouse)
+
+          raycaster.setFromCamera(mouse, camera);
+```
+* Adding this could make it so that when the mouse is moving the mouse is being recorded by the raycaster and also the camera positioning
+* Me and my partner are currently unsure for what to do for the website since the codechangers was shut down and we didn't seem to have a backup plan for the function of shooting 
+
+
 
 <!--
 * Links you used today (websites, videos, etc)
