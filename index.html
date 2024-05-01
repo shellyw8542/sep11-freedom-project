@@ -1,29 +1,37 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
+    <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <style>
-            /* CSS */
-            
-        </style>
-        
-        <title>Title</title>
-    </head>
-    <body>
-        <!-- HTML -->
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="script.js"></script> -->
-        <script>
-            // JS
-            
-            
-        </script>
-    </body>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+
+    <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+
+    <a-box src="https://i.imgur.com/mYmmbrp.jpg" color="red" position="0 2 -5" rotation="0 45" scale="2 2 2"></a-box>
+    <a-plane position="17 0.1 20" rotation="-90 6 90" width="10" height="60" color="#000000"></a-plane>
+    <a-plane position="10 0.2 20" rotation="-90 6 80" width="1" height="50" color="#FFFF00"></a-plane>
+    <a-box src="first-building.jpeg" position="30 0 10" color="#FFFFFF" width="4" height="20" depth="4"></a-box>
+    <a-box position="17 0 10" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
+    <a-box position="30 0 30" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
+    <a-box position="17 0 30" src="trad.png" color="#C4A484" width="10" height="22" depth="8"></a-box>
+    <a-box position="20 4 40" src="light.png" color="#C4A484" width="25" height="30" depth="8"></a-box>
+    <a-box position="17 0 10" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
+    <a-box position="50 5 30" src="new.png" color="#C4A484" width="20" height="60" depth="9"></a-box>
+    <a-box position="7 0 30" src="french.png" color="#C4A484" width="8" height="22" depth="8"></a-box>
+    <a-box position="0 0 5" src="new.png" color="#C4A484" width="20" height="60" depth="9"></a-box>
+
+    <a-entity geometry="primitive: icosahedron" position="17 5 50"></a-entity>
+    <a-cylinder position="17 -1 50" radius="0.3" height="4" color="#FFC65D"></a-cylinder>
+    <a-box position="-1 3 -5" color="red" width="10" length="30" height="5"></a-box>
+    <a-sphere position="-4 1 -5" radius="1.25" color="#000000"></a-sphere>
+    <a-sphere position="2 1 -5" radius="1.25" color="#000000"></a-sphere>
+  </a-scene>
+</body>
 </html>
