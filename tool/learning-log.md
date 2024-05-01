@@ -9,7 +9,7 @@ Project: **Shooter Game**
 10/28/2023:
 * I went the the [Getting Started](https://jestjs.io/docs/getting-started) to find the setup and a [youtube tutorial](https://www.youtube.com/watch?v=FgnxcUQ5vho&ab_channel=WebDevSimplified) Of the setup in jest. (benefits of jests)
 * I tried to use the code that was provided on the website, however, I didn't understand what npm or yarn meant
-* Reading if you need to have Jest [installed](https://stackoverflow.com/questions/69559370/jest-without-npm-or-yarn) in order to test the coding out 
+* Reading if you need to have Jest [installed](https://stackoverflow.com/questions/69559370/jest-without-npm-or-yarn) in order to test the coding out
 * When trying out the coding on [https://jestjs.io/docs/getting-started] for yarn in [JS Bin](https://jsbin.com/nibezeyeho/edit?js,console) it kept giving me errors or `https://jsbin.com/nibezeyeho/edit?js,console` meaning that I would have to download it.
 * As for now, I will watch videos about Jest to see if it would fit into my coding style.
 
@@ -35,11 +35,11 @@ Project: **Shooter Game**
 * Autoplay loop can be true or false (true means keep playing) (false stop playing)
 * Came across an error with Jsbin when tinkering with the demo with autoplay false.
 * When testing loops (with A-frame) right-click and turn off the loop.
-* Play and Pause can be used by javascript `play-pause`  
+* Play and Pause can be used by javascript `play-pause`
 
 11/20/2023:
 * Experimented with [Responsive UI](https://aframe.io/examples/showcase/responsiveui/)
-* By using the Inspect Scene 
+* By using the Inspect Scene
 * Whenever you click on the element it focuses on that element
 * Uses `<a-entity>` for a lot of these elements and projects
 * Decided to look at the [entity](https://aframe.io/docs/1.5.0/core/entity.html) element
@@ -50,7 +50,7 @@ Project: **Shooter Game**
 * Adding this to the example made the model more realistic
 * You can also add components  to the `<a-entity>` like camera or sound
 * Add .(that type of component)
-* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well  
+* I believe that using the `<a-entity>` seems more like an id in HTML however you could adjust and also put javascript in it as well
 
 11/27/2023
 * Shubata gave me a helpful [video](https://www.youtube.com/watch?v=HrLsr-nzZGA)
@@ -58,18 +58,18 @@ Project: **Shooter Game**
 * In the video it explains the `<a-cursor>`
 * Explains that `<a-cursor>` when the player selects the object, the object is selected in the coding
 * Raycaster is a way to extend a line towards a place and check if it is near or on another object/entity
-* Fuse is a timer 
-* Fusetimeout is the amount of time in the timer <-- this goes my milliseconds  
+* Fuse is a timer
+* Fusetimeout is the amount of time in the timer <-- this goes my milliseconds
 `<a-cursor fuse="true" fusetimeout="8000"></a-cursor>`
 * When doing raycaster be careful and choose what object should be selected to be a raycaster because it will generally pick everything the player chooses
-* Raycaster seems to have a small circle in the middle of the screen  
+* Raycaster seems to have a small circle in the middle of the screen
 `<a-entity camera position="0 2 0" look-control wasd-controls>`
 * When camera positioning is also critical because  it starts the user off with this position
 * Controls of look can make you move your cursor along with your POV so whenever you left-click it changes the POV
 * Controls of wasd the POV would move forward, backward, sideways if you press wasd
 * With the controls you have to be organized with them. If the controls of wasd are spelled wrong then the whole coding doesn't work.
 * In the sandbox, following the video I couldn't access my website so I had to switch to jsbin
-* Whenever doing the coding do it in jsbin and paste the coding to the sandbox so next time referring to that topic go back on the sandbox and try to keep it organized. 
+* Whenever doing the coding do it in jsbin and paste the coding to the sandbox so next time referring to that topic go back on the sandbox and try to keep it organized.
 
 12/04/2023
 * I went back to the A-frame and sought something that might be helpful towards our game.
@@ -85,7 +85,7 @@ Project: **Shooter Game**
 * I thought that positioning was just to position the models' angle
 * It made me curious about what positioning for light does
 * Position is supposed to be for the light source when you can adjust where you want the light source to be from
-* The coding for positioning is just like the other model coding: `position="1 1 1"` 
+* The coding for positioning is just like the other model coding: `position="1 1 1"`
 --> blog 1
 
 12/18/2023 - 1/8/2024
@@ -102,7 +102,7 @@ Project: **Shooter Game**
 * Vive-controls are used for controls from different uses to complete a game. For example, controllers, buttons, hand, model, etc.
 * In case we are going to use this feature, this would be an example of the code: `<a-entity vive-controls="hand: left"></a-entity>`
 * The same goes to the [oculus-touch-controls](https://aframe.io/docs/1.5.0/components/oculus-touch-controls.html)and [windows-motion-controls](https://aframe.io/docs/1.5.0/components/windows-motion-controls.html)
-* Those components explain the coding for the controls and how to code them 
+* Those components explain the coding for the controls and how to code them
 * Nextly, I will be focusing on the laser-controls, which besides all the controls, it needs the component of cursor and raycaster.
 * Based on the document it explains that the cursor is used to help the certain area that is in the cursor is in.
 * The Raycaster is used for the drawing of the lasers.
@@ -194,13 +194,159 @@ Example:
 * `<a-entity mixin="red blue cube">`
 * This would be red, but blue would show up because it is the last of the color
 * Mixin is used for convenience when coding the same properties, and also combining properties
-* I would most likely use this for my freedom project  
+* I would most likely use this for my freedom project
+
 --> blog 2
-  
+
+3/2/2024
+* After creating the MVP, me and my partner decided to start working on the setting
+* My partner found this [video](https://www.youtube.com/watch?v=K_1RdCVuu98) that could be helpful for us to do
+* Also this [environment component](https://github.com/supermedium/aframe-environment-component)
+* This environment component helps us find the setting for the game (just the visuals of the floor/map)
+* After that we wanted to pick what type of environment we could pick out and we chose for now to do the default of it
+* Me and my partner decided to build a model of a building to be used for later developments
+* I struggled a lot with the placement of the windows
+* I tried to shrink the box by putting width and height by 1
+* Example:
+```html
+<a-box position="-7 0 12" color="#8b0000" width="4" height="20" depth="4"></a-box> // <-- this is the initial (building)
+<a-box position="-7 0 12" color="#8b0000" width="1" height="1" depth="4"></a-box> // <-- this is the initial (window)
+```
+* I believe that it does still look a bit rectangle but it is covered in the building
+* I changed the positioning to half of everything:
+```html
+<a-box position="-3.5 0 6" color="#8b0000" width="1" height="1" depth="3"></a-box> // <-- this is the initial (first window)
+<a-box position="-6.2 5 12.8" color="#8b0000" width="1" height="1" depth="3"></a-box> // <-- this is the initial (finial window)
+```
+* The first window was off the building, which was hard for me to fix, and I also didn't know what was wrong because I split the building position into half
+* Then after a few tinkering moments I found that increasing "0" and "12" in position would've been better because it could move the window more up in the building
+* The width was too far for the range, so I would put not too much apart from the box position but relatively close to the initial position.
+* Then my partner helped me create details for the building by using an image on by using "scr" in the model of the box
+  ```
+  <a-box src="https://i.imgur.com/mYmmbrp.jpg"
+  ```
+  3/4/2024
+  * After working on my setting, it was time for the next step in the MVP
+  * I had to do the buildings and cars
+  * I communicated with my partner and split up the work with me doing the building and my partner doing the cars
+  * For my building I've decided to use an image to make it look realistic to the model
+  * `<a-box src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." position="-7 0 12" color="#FFFFFF" width="4" height="20" depth="4"></a-box>`
+  * This makes it so that the image would be in the model of the box
+  * Then after that it was time to make the road because I had some extra time to make it
+  * My partner suggests I use an `<a-plane>`
+  * I didn't know what that element fully does until my partner told me what it does
+  * The <a-plane> is meant for the ground
+  * So what we did was `<a-plane position="20 0 20" rotation="-90 0 0" color="#000000" width ="10" height="0.5"></a-plane>`
+  * This made the road at the bottom and it had a limited space
+  * Then to make that road realistic, we wanted to put the yellow line in the road
+  * `<a-box position="17 0 12" color="#C4A484" width="8" height="12" depth="8"></a-box>`
+  * The yellow line may be a bit longer than the road, however for now since we didn't fully finish the setting and we might need adjustments  
+
+   3/24/2024
+* My partner and I wanted to adjust some of the settings for this week
+* My partner created more buildings and I wanted to create a new design
+* I decided to make a new car
+* For the car you would need to have different shapes/models
+* I wanted to have a box, sphere, and triangle
+* At first, I thought that I would use the width, length, and height features however it didn't work in my favor
+* The length feature didn't do much for the box:
+`<a-box position="-1 3 -5"color="red" width="10" length="30" height="5"></a-box>`
+* I wanted to make the box wider so I used "depth" like the building:
+  <a-box position="-1 3 -5"color="red" width="10" depth="3" height="5"></a-box>
+* After that I made the wheels by using the sphere shape
+```
+  <a-sphere position="-4 1 -5" radius="1.25" color="#000000"></a-sphere>
+      <a-sphere position="2 1 -5" radius="1.25" color="#000000"></a-sphere>
+```
+* Creating the car wasn't bad, it was the size of the car that made it difficult.
+* I also created a window for the car by using a smaller box to fix in the bigger box
+  ` <a-box position="2 4 -5"color="blue" width="2" height="2" depth="3.5"></a-box> `
+* To see the actual window you would need to make the depth a little higher because then it won't cause a bug or issue in that certain area of the car
+
+03/31/2024
+* Me and my partner wanted to try to make it so when you press a key, you shoot
+* However, after looking at the shooting functions for multiple videos I couldn't understand the coding that was happening in javascript 
+* We had a lot of videos to help guide us like:
+          * https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/
+          * https://www.youtube.com/watch?v=q3bjSDTgUAg
+          * https://www.youtube.com/watch?v=SeV7RmjxfTY
+          * https://www.youtube.com/watch?v=t5Hou5QsRiE
+* We reviewed it and came to realize that they had this "codechanger" website
+* We tried some coding with the codechanger website like: 
+`<a-cursor intersection-spawn="Event: click' mixin:voxel;"><a-cursor>`
+* This didn't change anything in the code and it also didn't have a function for it
+* This was supposed to be the coding to help make the player able to shoot
+* Then we wanted to see if it works on the video, so we tested the starter code provided: https://replit.com/@codechangers/Targets-Starter
+* The starter code wasn't working so we checked the official website for "code changers"
+* The official website was shutted down and then we didn't know how to start
+* We tried to use event listener: `.addEventListener("keypress", function);` but we didn't know how to start it
+* After we finished our discussion I went to try out the coding without codechanger
+```
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>  
+  </head>
+  <body>
+    <a-scene id="myScene">
+      <a-entity environment="preset:forest;"></a-entity>
+      <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
+      <a-camera id="myCamera" position="0 1 0">
+        <a-cursor = "event: keypress; mixin: voxel"></a-cursor>
+```
+04/7/24
+* Me and my partner was conflicted and found that the shooter function was more difficult than we expect
+* We decided to go look at some functions on how to throw in an A-frame
+* Went to research at three.js because a-frame was is part in three.js
+* In three.js it has this [physic](https://threejs-journey.com/lessons/physics#ammo-js)
+* I also saw this [video](https://www.youtube.com/watch?v=30bO8SBIZYw)
+* In the video you can be able to use a raycaster when shooting a ball
+```
+function onMouseDown(event){
+          mouseCoords.set // set the mouse on the origin
+          (event.clientX / innerWidth) * 2 - 1,
+          - (event.clientY / innerHeight) * 2 + 1
+);
+raycaster.setFromCamera(mouseCoords,Camera)
+```
+* This coding helps set up the initial mouse coordinates and camera
+* After that code, you will need to have [ammo.js](https://github.com/kripken/ammo.js/?tab=readme-ov-file)
+* The video also provided us with the addeventlistener
+```
+function addEventHandlers(){
+          event.addEventListener('mousedown', onMouseDown, false)
+```
+* The raycaster function would have to have a follow-up of coding from the `addEventHandlers()` to function after the mouse shoots
+* I will be discussing more with my partner about this video and to see if it'll help with our project. However, I believe that it is useful to have because three.js has physics to make the ball shoot and slowly go down
+* It also confirms my thinking about the addEventListener into the code for shooting  
+
+04/14/2024
+* Me and my partner were discussing three.js and we were watching the video that I found last week
+* I installed Three.js and tried to work link both three.js and a-frame
+* I also introduced physics to my partner
+* Since codechangers was still down I wanted to research an alternative for throwing a ball
+* I also came across this `https://astokum.github.io/threejs-cannonjs-physics-simulation-3Da`
+* Me and my partner found the code very confusing because we had not learned anything about three.js
+* I found this concept of [raycasters](https://sbcode.net/threejs/raycaster/) on three js that might help the project if we end up doing three.js
+* Raycasters are important for many purposes like showing the distance between the cameras direct from the raycaster's position
+* In the example, it shows that they used the raycaster, but also when you click the mouse twice you get to spawn a triangle/
+ ```
+renderer.domElement.addEventListener('mousemove', onMouseMove, false)
+
+ function onMouseMove(event: MouseEvent) {
+     const mouse = {
+         x: (event.clientX / renderer.domElement.clientWidth) * 2 - 1,
+         y: -(event.clientY / renderer.domElement.clientHeight) * 2 + 1
+     } as THREE.Vector2
+
+          console.log(mouse)
+
+          raycaster.setFromCamera(mouse, camera);
+```
+* Adding this could make it so that when the mouse is moving the mouse is being recorded by the raycaster and also the camera positioning
+* Me and my partner are currently unsure for what to do for the website since the codechangers was shut down and we didn't seem to have a backup plan for the function of shooting 
 
 
 
-<!-- 
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
