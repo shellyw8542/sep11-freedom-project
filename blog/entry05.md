@@ -44,7 +44,10 @@ function onMouseMove(event: MouseEvent) {
 
          raycaster.setFromCamera(mouse, camera);
 ```
-This code makes it so that when the mouse is being moved it is also being recorded by the raycaster. So that the next movement can be interactive from based on the previous movement. 
+This code makes it so that when the mouse is being moved it is also being recorded by the raycaster. So that the next movement can be interactive based on the previous movement.  
+I've tried a lot to make the coding work on my original project but it couldn't work on my end. My partner suggested working on the shooting beyond MVP, but I would still keep trying to work on the shooting function. Since the codechangers website closed mid-way through the year and messed up our plan. We decided to create a better-looking setting for our actual project. For the settings we continued to make buildings and apply with better visuals. 
+
+I am currently stages 5 and 6 in the Engineering Design Process where I am creating the prototype and testing out the prototype of my freedom project. The next step of the Engineering Design Process is to improve the prototype of the project to have a more enjoyable experience for my partner and me, as well as the people playing on our project. Some takeaways that I've gotten from this blog were: Debugging and a growth mindset. I've used the skill of debugging to find out the problem with my previous code and tried to learn and use the code from three.js to apply it to my project. I've also used the skill of a growth mindset to help myself not give up after finding out that codechangers didn't work. I would have patience with my coding and thinking on how to work with the code that I've gotten. 
 
 
 [Previous](entry04.md) | [Next](entry06.md)
