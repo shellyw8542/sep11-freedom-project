@@ -1,5 +1,5 @@
 # SEP11 Freedom Project
-by **Shelly**
+by **Shelly Weng**
 
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
@@ -8,9 +8,9 @@ For my project, I chose to independently study **Aframe** in order to help me ma
 
 ## Links
 
-[Product]()
+[Product](https://shubataf2489.github.io/shubataf2489-shellyw8542-sep11-freedom-project/)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/11OAdvFYdjXzAf9CMx2ogsotNmWQ5ScnfysYAj9VZUk0/edit#slide=id.g2dee14f77a5_0_0)
 
 ## Implications
 ##### PROS
