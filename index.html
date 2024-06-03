@@ -1,37 +1,192 @@
 <html>
-<head>
-  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-</head>
-<body>
-  <a-scene>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
-    <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
-
-    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-
-    <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
-
-    <a-box src="https://i.imgur.com/mYmmbrp.jpg" color="red" position="0 2 -5" rotation="0 45" scale="2 2 2"></a-box>
-    <a-plane position="17 0.1 20" rotation="-90 6 90" width="10" height="60" color="#000000"></a-plane>
-    <a-plane position="10 0.2 20" rotation="-90 6 80" width="1" height="50" color="#FFFF00"></a-plane>
-    <a-box src="first-building.jpeg" position="30 0 10" color="#FFFFFF" width="4" height="20" depth="4"></a-box>
-    <a-box position="17 0 10" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
-    <a-box position="30 0 30" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
-    <a-box position="17 0 30" src="trad.png" color="#C4A484" width="10" height="22" depth="8"></a-box>
-    <a-box position="20 4 40" src="light.png" color="#C4A484" width="25" height="30" depth="8"></a-box>
-    <a-box position="17 0 10" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
-    <a-box position="50 5 30" src="new.png" color="#C4A484" width="20" height="60" depth="9"></a-box>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene physics="debug: true" score-counter>
+      <a-entity></a-entity>
+      <a-icosahedron static-body class="target" id="target1" color="white" radius="1" position="-2 3 -5"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target2" color="white" radius="1" position="2 3 -5"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target3" color="white" radius="1" position="-2 3 -10"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target4" color="white" radius="1" position="2 3 -10"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target5" color="white" radius="1" position="-2 8 -5"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target6" color="white" radius="1" position="2 8 -5"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target7" color="white" radius="1" position="-2 8 -10"></a-icosahedron>
+      <a-icosahedron static-body class="target" id="target8" color="white" radius="1" position="2 8 -10"></a-icosahedron>
+      <a-camera id="camera">
+        <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
+      </a-camera>
+      <a-assets>
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
+      </a-assets>
+      <a-sky src="#skyTexture" theta-length="90" radius="100"></a-sky>
+      <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+    <a-plane position="-0.75 0.179 0.228" rotation="-90 90 90" width="10" height="70" color="#000000"></a-plane>
+    <a-plane position="0 0.26 0" rotation="-90 90 90" width="1" height="70" color="#FFFF00"></a-plane>
+    <a-plane position="10 0.25 -20" rotation="-90 6 90" width="10" height="70" color="#000000"></a-plane>
+    <a-plane position="10 0.26 -20" rotation="-90 6 90" width="1" height="70" color="#FFFF00"></a-plane>
+    <a-plane position="10 0.25 20" rotation="-90 6 90" width="10" height="70" color="#000000"></a-plane>
+    <a-plane position="10 0.26 20" rotation="-90 6 90" width="1" height="70" color="#FFFF00"></a-plane>
+    <a-box src="first-building.jpeg" position="6.460 7.230 0.075" color="#FFFFFF" width="4" height="15" depth="4"></a-box>
+    <a-box position="9.633 6.999 8.826" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
+    <a-box position="-10 0 -40" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
+    <a-box position="-30 0 30" src="trad.png" color="#C4A484" width="10" height="22" depth="8"></a-box>
+    <a-box position="35 0 50" src="trad.png" color="#C4A484" width="10" height="22" depth="8"></a-box>
+    <a-box position="17.164 7.250 -8.546" src="light.png" color="#C4A484" width="25" height="15" depth="8"></a-box>
+    <a-box position="-40 6.977 -24.934" src="light.png" color="#C4A484" width="20" height="30" depth="8"></a-box>
+    <a-box position="-20 0 0" src="light.png" color="#C4A484" width="25" height="30" depth="8"></a-box>
+    <a-box position="20 0 -50" src="pic.png" color="#C4A484" width="8" height="14" depth="8"></a-box>
+    <a-box position=" -15.7 6.977 -28.934" src="new.png" color="#C4A484" width="20" height="60" depth="9"></a-box>
+    <a-box position=" 40 0 -30" src="new.png" color="#C4A484" width="20" height="60" depth="9"></a-box>
     <a-box position="7 0 30" src="french.png" color="#C4A484" width="8" height="22" depth="8"></a-box>
-    <a-box position="0 0 5" src="new.png" color="#C4A484" width="20" height="60" depth="9"></a-box>
+<!--        sound -->
+    <a-sound src="sound.wav" autoplay="true"></a-sound>
+    <a-entity static-body id="car" position="3 0 0">
+      <a-box position="0 1 -1.4" color="#fea1de" height="0.75" width="2" depth="4"></a-box>
+      <a-box position="0 1.75 -1.15" color="#fea1de" height="0.8" width="1.6" depth="2"></a-box>
+      <a-box position="0 1.75 -1.14" color="white" height="0.6" width="1.4" depth="2.03"></a-box>
+      <a-box position="-0.01 1.75 -1.59" color="white" height="0.6" width="1.63" depth="1"></a-box>
+      <a-box position="-0.01 1.75 -0.55" color="white" height="0.6" width="1.63" depth="0.5"></a-box>
+      <a-cylinder height="0.25" radius="0.4" position="1 0.6 0" color="black" rotation="0 0 90"></a-cylinder>
+      <a-cylinder height="0.25" radius="0.4" position="-1 0.6 0" color="black" rotation="0 0 90"></a-cylinder>
+      <a-cylinder height="0.25" radius="0.4" position="1 0.6 -2.4" color="black" rotation="0 0 90"></a-cylinder>
+      <a-cylinder height="0.25" radius="0.4" position="-1 0.6 -2.4" color="black" rotation="0 0 90"></a-cylinder>
+      <a-cylinder height="0.1" radius="0.2" position="-0.6 1 -3.4" color="yellow" rotation="0 90 90"></a-cylinder>
+      <a-cylinder height="0.1" radius="0.2" position="0.6 1 -3.4" color="yellow" rotation="0 90 90"></a-cylinder>
+      <a-cylinder height="0.1" radius="0.2" position="-0.6 1 0.6" color="red" rotation="0 90 90"></a-cylinder>
+      <a-cylinder height="0.1" radius="0.2" position="0.6 1 0.6" color="red" rotation="0 90 90"></a-cylinder>
+    </a-entity>
+    <a-box height="1" width="2" depth ="5.5" position="0 0.75 -4.1" rotation="0 0 0" color="#4CC3D9"></a-box>
+       <a-box height="1" width="2" depth ="0.2" position="0 1.25 -2.9" rotation="0 0 0" color="#4CC3D9"></a-box>
+       <a-box height="1" width="1" depth ="0.2" position="0 1.2 -2.2" rotation="-70 0 0" color="#4CC3D9"></a-box>
+       <a-box height="0.05" width="2" depth ="1.8" position="0 1.75 -3.7" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.4 -4" radius="0.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="0 0.5 -2.5" radius="0.5" height="2.75" color="#FFC65D" rotation="90 90 0"></a-cylinder>
+      <a-box  material="color: white; side: double; transparent: true; opacity: 0.5;"height="1" width="2" depth ="0.05" position="0 1.5 -5" rotation="60 0 0" color="white"></a-box>
+       <a-cylinder position="0 0.5 -5.5" radius="0.5" height="2.75" color="#FFC65D" rotation="90 90 0"></a-cylinder>
+    </a-scene>
+    <script>
+      AFRAME.registerComponent('shoot', {
+        init: function () {
+          const el = this.el;
+          window.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') { // Shoot when spacebar is pressed
+              const bullet = document.createElement('a-sphere');
+              bullet.setAttribute('radius', '0.05');
+              bullet.setAttribute('color', 'red');
+              bullet.setAttribute('dynamic-body', 'shape: sphere;');
 
-    <a-entity geometry="primitive: icosahedron" position="17 5 50"></a-entity>
-    <a-cylinder position="17 -1 50" radius="0.3" height="4" color="#FFC65D"></a-cylinder>
-    <a-box position="-1 3 -5" color="red" width="10" length="30" height="5"></a-box>
-    <a-sphere position="-4 1 -5" radius="1.25" color="#000000"></a-sphere>
-    <a-sphere position="2 1 -5" radius="1.25" color="#000000"></a-sphere>
-  </a-scene>
-</body>
+              // Set bullet position to camera position
+              const cam = document.querySelector('#camera');
+              const position = new THREE.Vector3();
+              cam.object3D.getWorldPosition(position);
+              bullet.setAttribute('position', position);
+
+              // Get camera direction vector
+              const direction = new THREE.Vector3();
+              cam.object3D.getWorldDirection(direction);
+
+              // Set bullet velocity
+              const velocity = direction.multiplyScalar(-10);
+              bullet.setAttribute('velocity', velocity);
+
+              el.sceneEl.appendChild(bullet);
+
+              // Remove bullet after 2 seconds to clean up the scene
+              setTimeout(function () {
+                if (bullet.parentNode) {
+                  bullet.parentNode.removeChild(bullet);
+                }
+              }, 2000);
+            }
+          });
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('a-scene').setAttribute('shoot', '');
+
+        AFRAME.registerComponent('velocity', {
+          schema: { type: 'vec3' },
+          init: function () {
+            this.direction = new THREE.Vector3();
+          },
+          tick: function (time, timeDelta) {
+            const velocity = this.data;
+            this.el.object3D.translateX(velocity.x * timeDelta / 1000);
+            this.el.object3D.translateY(velocity.y * timeDelta / 1000);
+            this.el.object3D.translateZ(velocity.z * timeDelta / 1000);
+          }
+        });
+      });
+
+      AFRAME.registerComponent('intersection-spawn', {
+        init: function () {
+          var el = this.el;
+          el.addEventListener('click', function (evt) {
+            var position = evt.detail.intersection.point;
+            spawnBullet(position);
+          });
+        }
+      });
+
+      function spawnBullet(position) {
+        var scene = document.querySelector('a-scene');
+        var bullet = document.createElement('a-sphere');
+        bullet.setAttribute('radius', '0.1');
+        bullet.setAttribute('color', 'red');
+        bullet.setAttribute('dynamic-body', ''); // Add physics component
+        bullet.setAttribute('position', position);
+        bullet.setAttribute('velocity', '0 0 -10'); // Initial velocity
+        bullet.setAttribute('collision-filter', { group: 'playerBullets' }); // Collision filter
+        bullet.setAttribute('class', 'playerBullet'); // Add a class for styling or targeting
+
+        bullet.addEventListener('collide', function (event) {
+          var collidedEntity = event.detail.body.el;
+          if (collidedEntity.classList.contains('target')) {
+            scene.removeChild(collidedEntity);
+          }
+          scene.removeChild(bullet);
+        });
+
+        scene.appendChild(bullet);
+
+        setTimeout(function () {
+          if (bullet.parentNode) {
+            scene.removeChild(bullet);
+          }
+        }, 3000);
+      }
+
+      function updateTargetPositions() {
+        var targets = document.querySelectorAll('.target');
+        targets.forEach(function (target) {
+          setInterval(function () {
+            var x = parseFloat(target.getAttribute('position').x);
+            var y = parseFloat(target.getAttribute('position').y);
+            var z = parseFloat(target.getAttribute('position').z);
+            var speed = 10; // Adjust speed here
+            var randomX = Math.random() * 0.5 - 0.25;
+            var randomY = Math.random() * 0.5 - .20;
+            var randomZ = Math.random() * 0.5 - 0.25;
+            target.setAttribute('position', {
+              x: x + randomX * speed,
+              y: y + randomY * speed,
+              z: z + randomZ * speed
+            });
+          }, 1000); // Update every 1000ms
+        });
+      }
+
+      updateTargetPositions();
+
+      var camera = document.querySelector('#camera');
+      camera.addEventListener('click', function () {
+        var cursor = document.querySelector('a-cursor');
+        cursor.components['intersection-spawn'].init();
+      });
+    </script>
+  </body>
 </html>
