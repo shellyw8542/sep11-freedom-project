@@ -3,7 +3,7 @@
 
 After a whole year of doing the project, I finally got able to reveal my [product](https://shubataf2489.github.io/shubataf2489-shellyw8542-sep11-freedom-project/) to the whole community to see what I and my partner created. I was able to present it to my classmates and also at the expo which I will be going over in this entry. 
 
-After the Beyond MVP, we had to explain our coding, process, struggles, and takeaways with our projects. My partner found that we should split our takeaways and struggles together because explaining our work and struggles was a bit more difficult if we didn't face them. We also explained our part of coding so it would be easier to explain what is happening to the code. There were some difficulties that we had when making the slides because I didn't know what my partner was planning to say what she wanted to say and what I wanted to say too. The most important part for me in the slides were the coding, struggles, and overall takeaways. 
+After the Beyond MVP, we had to explain our coding, process, struggles, and takeaways with our projects. My partner found that we should split our takeaways and struggles together because explaining our work and struggles was a bit more difficult if we didn't face them. We also explained our coding part so it would be easier to explain what is happening to the code. There were some difficulties that we had when making the slides because I didn't know what my partner was planning to say what she wanted to say and what I wanted to say too. The most important part for me in the slides were the coding, struggles, and overall takeaways. 
 ```js
   document.body.addEventListener("keydown", function(event) {
          if (event.code === "Space") {// shoots bullets every time space is pressed 
