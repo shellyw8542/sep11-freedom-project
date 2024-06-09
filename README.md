@@ -9,7 +9,7 @@ For my project, I chose to study **Aframe** in order to help me make my project 
 For my freedom project, I wanted to create a shooter game that is different from all of the popular games out there. My partner and I decided to create a calming shooter game; if the player doesn't like to shoot, they can admire the view of the city. We were able to create this game based on our knowledge of CSS, HTML, Javascript, and our tool A-frame. Our main goal of this project is to help the people with destressing.
 
 ## Content
-The Quiet City is a game when you press the spacebar, you are able to shoot a ball onto the clouds. The clouds are the targets that when you get all of the clouds within 3 minutes you may be allowed to look at the starry night sky. However, if you are not able to achieve that goal, you can also be able to explore the city and  try to find the mascot. 
+The Quiet City is a game when you press the spacebar, you are able to shoot a ball onto the clouds. The clouds are the targets that when you get all of the clouds within 3 minutes you may be allowed to look at the starry night sky. However, if you are not able to achieve that goal, you can also be able to explore the city and  try to find the mascot. Be sure to have fun and enjoy the moment!!
 ## Links
 
 [Product](https://shubataf2489.github.io/shubataf2489-shellyw8542-sep11-freedom-project/)
